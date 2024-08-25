@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Ariel&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.kk-text-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  background: #c30606;
+  overflow: hidden;
+  position: relative;
+  height: 30px; /* Adjust height as needed */
+}
+
+.kk-h1 {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: White;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: #fff;
+  text-stroke-color: #fff;
+  white-space: nowrap;
+  padding-left: 15px;
+  align-items: center;
+  padding-top: 5px;
+  letter-spacing: 1px;
+  animation: kk-move-rtl 20000ms linear infinite;
+}
+
+@keyframes kk-move-rtl {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

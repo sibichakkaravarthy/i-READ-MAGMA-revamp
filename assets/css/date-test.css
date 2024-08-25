@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color: #6a38c2;
+  --primary-color-dark: #6132b4;
+  --text-dark: #262626;
+  --text-light: #737373;
+  --extra-light: #e5e5e5;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section__header {
+  max-width: 900px;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.section__header span {
+  color: var(--primary-color);
+}
+
+.section__description {
+  max-width: 600px;
+  margin-inline: auto;
+  color: var(--text-light);
+  line-height: 1.75rem;
+  text-align: center;
+}
+
+
+.logo span {
+  color: #fa6021;
+}
+
+img {
+  display: flex;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul {
+  list-style: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.steps {
+
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+.steps__grid {
+  margin-top: 4rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.steps__card {
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  position: relative; /* Ensure the card is positioned */
+  top: 0; /* Initialize top to 0 */
+  transition: top 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  
+}
+.steps__card:hover {
+  
+  top: -10px; /* Move the card up */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* Ensure the hovered card appears above others */
+}
+
+
+.steps__card span {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 5px 11px;
+  font-size: 1.5rem;
+  border-radius: 100%;
+}
+
+.steps__card:nth-child(1) span {
+  color: #fa4e09;
+  background-color: #fff9f6;
+}
+
+.steps__card:nth-child(2) span {
+  color: #6a38c2;
+  background-color: #e9ddff;
+}
+
+.steps__card:nth-child(3) span {
+  color: #3ac2ba;
+  background-color: #f0fffe;
+}
+
+.steps__card:nth-child(4) span {
+  color: #fbbc09;
+  background-color: #fff8e3;
+}
+
+.steps__card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.steps__card p {
+  color: var(--text-light);
+}
+
+@media (width > 768px) {
+ 
+  .steps__grid {
+    margin-top: 6rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .steps__card:nth-child(2n - 1) {
+    transform: translateY(-2rem);
+  }
+
+
+}
+
+@media (width > 1024px) {
+  .steps__card {
+    padding: 1.5rem;
+  }
+
+ 
+  
+}

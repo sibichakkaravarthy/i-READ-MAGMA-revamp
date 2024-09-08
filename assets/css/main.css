@@ -961,8 +961,46 @@ section,
   box-shadow: 5px 5px black;
   color:black;
 }
-
-
+.button-container{
+  margin-top: 50px;
+}
+.button-container .btn-get-started {
+  color: #ed0000;
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  background-color: white;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  border: 1px solid #aa2b33;
+  box-shadow: 5px 5px #aa2b33;
+  margin: 10px;
+  
+}
+.btn-get-started:hover {
+  box-shadow: 5px 5px black;
+  border: 1px solid #000000;
+  color:black;
+}
+.btn-get-started-terms {
+  color: #ed0000;
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  background-color: white;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  box-shadow: 5px 5px #aa2b33;
+  border: 1px solid #aa2b33;
+  margin: 10px;
+  
+}
 .hero .carousel {
   inset: 0;
   position: absolute;

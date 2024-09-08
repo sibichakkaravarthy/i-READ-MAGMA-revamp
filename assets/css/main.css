@@ -1001,6 +1001,11 @@ section,
   margin: 10px;
   
 }
+.btn-get-started-terms:hover {
+  box-shadow: 5px 5px black;
+  border: 1px solid #000000;
+  color:black;
+}
 .hero .carousel {
   inset: 0;
   position: absolute;
